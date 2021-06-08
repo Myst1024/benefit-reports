@@ -1,0 +1,40 @@
+.header {
+  background-color: hsla(0, 0%, 18%, 0.239);
+  box-shadow: hsla(0, 0%, 18%, 0.239) -1px 1px 10px 10px;
+  padding: 0.5em 5em;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    height: 90%;
+  }
+  .address {
+    font-size: 1.4rem;
+  }
+  .reportName {
+    flex-grow: 2;
+    font-size: 5em;
+    text-align: center;
+  }
+  .date {
+    font-size: 1.4rem;
+  }
+}
+
+.main {
+  padding: 5rem 20%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.4rem;
+
+  .department {
+  }
+}
+
+.footer {
+}
