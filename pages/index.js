@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.scss";
 
 export default function Home({ company, departments }) {
   const [activeBrandId, setActiveBrandId] = useState(0);
+
   const currentDate = new Date(Date.now()).toDateString();
   const activeLogoUrl = `/logos/${activeBrandId}.PNG`;
 
@@ -73,8 +74,6 @@ export default function Home({ company, departments }) {
           {Departments}
         </section>
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }
