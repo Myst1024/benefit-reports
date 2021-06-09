@@ -4,7 +4,7 @@ export default (req, res) => {
   res.status(200).json(departmentData);
 };
 
-const departmentData = [
+export const departmentData = [
   {
     id: 0,
     name: "engineering",

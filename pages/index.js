@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import Department from "./components/Department";
+import { departmentData } from "./api/departments";
+import { companyData } from "./api/company";
 import styles from "../styles/Home.module.scss";
 
 export default function Home({ company, departments }) {
@@ -88,20 +90,26 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { company, departments }, // will be passed to the page component as props
+    props: { company, departments },
   };
 }
 
 async function getCompanyData() {
-  const res = await fetch(`http://localhost:3000/api/company`);
-  const data = await res.json();
+  // accessing data directly to allow use with getStaticProps
+  // const res = await fetch(`http://localhost:3000/api/company`);
+  // const data = await res.json();
+
+  const data = companyData;
 
   return data;
 }
 
 async function getDepartmentsData() {
-  const res = await fetch(`http://localhost:3000/api/departments`);
-  const data = await res.json();
+  // accessing data directly to allow use with getStaticProps
+  // const res = await fetch(`http://localhost:3000/api/departments`);
+  // const data = await res.json();
+
+  const data = departmentData;
 
   return data;
 }
