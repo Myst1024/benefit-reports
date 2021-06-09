@@ -21,9 +21,7 @@ export default function Department(props) {
    */
   async function getEmployeeData(departmentId) {
     setLoadingEmployees(true);
-    const res = await fetch(
-      `http://localhost:3000/api/employees?departmentId=${departmentId}`
-    );
+    const res = await fetch(`/api/employees?departmentId=${departmentId}`);
     const data = await res.json();
 
     setTimeout(() => {
