@@ -26,7 +26,7 @@ export default function Home({ company, departments }) {
   );
 
   return (
-    <div className={(styles.container, `brand${activeBrandId}`)}>
+    <div className={`brand${activeBrandId}`}>
       <Head>
         <title>Benefit Summary Report</title>
         <link rel="icon" href="/favicon.ico" />
