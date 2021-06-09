@@ -35,7 +35,7 @@ export default function Department(props) {
   const EmployeeTable = loadingEmployees ? (
     <Spinner />
   ) : (
-    <table className={styles.employeeTable}>
+    <table className={styles.employeeTable} border="0" cellspacing="0">
       <thead>
         <tr>
           <th>Employee ID</th>
@@ -72,7 +72,6 @@ export default function Department(props) {
       <button className={styles.moreDetails} onClick={handleMoreDetailsClick}>
         {!expanded ? "More Details" : "Less Details"}
       </button>
-      {}
       {expanded && EmployeeTable}
     </div>
   );

@@ -1,6 +1,6 @@
 .header {
-  background-color: hsla(0, 0%, 18%, 0.239);
-  box-shadow: hsla(0, 0%, 18%, 0.239) -1px 1px 10px 10px;
+  background-color: rgb(255 255 255 / 25%);
+  box-shadow: rgb(46 46 46 / 24%) -1px 1px 10px 10px;
   padding: 0.5em 5em;
   height: 10rem;
   width: 100%;
@@ -31,8 +31,49 @@
   justify-content: center;
   align-items: flex-start;
   font-size: 1.4rem;
+  position: relative;
 
-  .department {
+  .brandSelect {
+    padding: 0.5rem;
+    border: 1px solid hsl(0deg 0% 0% / 20%);
+    background-color: hsl(0deg 0% 100% / 50%);
+    position: absolute;
+    top: 7rem;
+    right: 15%;
+  }
+
+  .section {
+    padding: 0 0 0 2rem;
+
+    h3 {
+      text-transform: capitalize;
+    }
+
+    p {
+      padding: 0 0 0 2rem;
+    }
+
+    .moreDetails {
+      margin-left: 2rem;
+      padding: 0.5rem;
+      border: 1px solid hsl(0deg 0% 0% / 20%);
+      background-color: hsl(0deg 0% 100% / 50%);
+    }
+    table {
+      background-color: rgb(255 255 255 / 30%);
+      box-shadow: rgb(0 0 0 / 9%) 1px 4px 3px 1px;
+      margin: 1rem 2rem;
+      padding: 1rem;
+      max-width: 60rem;
+
+      th {
+        text-align: left;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: hsl(0deg 0% 100% / 50%);
+      }
+    }
   }
 }
 

@@ -29,19 +29,15 @@ a {
 .brand1 {
   font-family: "Times New Roman", Times, serif;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    150deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(174, 0, 255) 100%
-  );
+  background: linear-gradient(150deg, white 0%, hsl(36deg 100% 66%) 100%);
 }
 
 // Loading Spinner
 .lds-ring {
-  display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem 2rem 2rem;
 }
 .lds-ring div {
   box-sizing: border-box;

@@ -44,6 +44,7 @@ export default function Home({ company, departments }) {
 
       <main className={styles.main}>
         <select
+          id="brandSelect"
           name="brand"
           className={styles.brandSelect}
           defaultValue={0}
@@ -51,8 +52,8 @@ export default function Home({ company, departments }) {
             setActiveBrandId(Number(e.target.value));
           }}
         >
-          <option value={0}>One</option>
-          <option value={1}>Two</option>
+          <option value={0}>Brand A</option>
+          <option value={1}>Brand B</option>
         </select>
         <section className={styles.section}>
           <h2 className={styles.sectionHeader}>
