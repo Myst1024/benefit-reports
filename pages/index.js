@@ -60,16 +60,16 @@ export default function Home({ company, departments }) {
         </select>
         <section className={styles.section}>
           <h2 className={styles.sectionHeader}>
-            Insurance cost at the Company level
+            Insurance Cost at the Company level
           </h2>
-          <p>Total cost of Insurance: ${company.totalCost}</p>
-          <p>Total paid by Employees: ${company.employeeCost}</p>
-          <p>Total paid by Company: ${company.companyCost}</p>
+          <p>Total Cost of Insurance: ${company.totalCost}</p>
+          <p>Total Paid by Employees: ${company.employeeCost}</p>
+          <p>Total Paid by Company: ${company.companyCost}</p>
         </section>
 
         <section className={styles.section}>
           <h2 className={styles.sectionHeader}>
-            Insurance cost at the Department level
+            Insurance Cost at the Department level
           </h2>
           {Departments}
         </section>
